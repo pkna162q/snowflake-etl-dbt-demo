@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_enterprise_survey
+    columns:
+      - name: year
+        tests: [not_null]
+      - name: industry_code_ANZSIC
+        tests: [not_null]
+      - name: value
+        tests: [not_null]
