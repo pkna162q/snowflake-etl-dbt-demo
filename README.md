@@ -1,15 +1,20 @@
-Welcome to your new dbt project!
+# Snowflake ETL dbt Demo
 
-### Using the starter project
+## 📌 Overview
+This project demonstrates an end-to-end ETL pipeline:
+- **Python** loads raw CSV data into **Snowflake**
+- **dbt sources** define raw tables
+- **dbt staging models** clean and cast data
+- **dbt fact models** aggregate metrics (e.g., revenue by industry/year)
+- **dbt tests** validate data quality
+- **dbt docs** generate lineage graphs and documentation
 
-Try running the following commands:
-- dbt run
-- dbt test
+## 🛠 Tech Stack
+- Python  
+- Snowflake  
+- dbt (Data Build Tool)
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## 🚀 How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/pkna162q/snowflake-etl-dbt-demo.git
