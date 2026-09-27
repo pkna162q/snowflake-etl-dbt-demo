@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fact_enterprise_revenue
+    description: "Fact table containing enterprise survey revenue data by industry, year, and size group."
+    columns:
+      - name: year
+        description: "Survey year"
+        tests:
+          - not_null
+      - name: industry_code_ANZSIC
+        description: "Industry classification code"
+      - name: industry_name_ANZSIC
+        description: "Industry classification name"
+        tests:
+          - not_null
+      - name: rme_size_grp
+        description: "Enterprise size group"
+      - name: variable
+        description: "Survey variable"
+      - name: value
+        description: "Numeric value of the survey variable"
+        tests:
+          - not_null
+      - name: unit
+        description: "Measurement unit"
